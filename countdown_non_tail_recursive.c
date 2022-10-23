@@ -20,9 +20,9 @@ void countdown(unsigned int n){
 
 
 //Tail Recursive with an accummulat
-int countdown_tail_recursive(unsigned int n, unsigned int acc_val)
+int countdown_tail_recursive(unsigned int n)
 {
-	acc_val = n;
+	unsigned int acc_val = n;
 	
 	if(acc_val==0)
 	{
@@ -31,14 +31,14 @@ int countdown_tail_recursive(unsigned int n, unsigned int acc_val)
 	}	
 	printf("\n%d\n", n);
 	//Recursive condition
-	return countdown_tail_recursive(n-1, acc_val); 
+	return countdown_tail_recursive(n-1); 
 	//no pending operation
 	
 }
 
 int ctr(unsigned int n)
 {
-	return countdown_tail_recursive(n,n);	// makes countdown_tail_recursive() the last operation and therefore no pending operation
+	return countdown_tail_recursive(n);	// makes countdown_tail_recursive() the last operation and therefore no pending operation
 }
 
 //Iterative
