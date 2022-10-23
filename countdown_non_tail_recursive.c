@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Write a C program thatwillask toenteran integer numberfromtheuserandwillcountdownuntil0. At the end, it will print«Time is up!».
+//Write a C program thatwillask to enter an integer number from the user and will countdown until 0. At the end, it will print «Time is up!».
 
 //Non-Tail Recursive
 void countdown(unsigned int n){
@@ -19,7 +19,7 @@ void countdown(unsigned int n){
 } 
 
 
-//Tail Recursive with an accummulat
+//Tail Recursive with an accummulated value
 int countdown_tail_recursive(unsigned int n)
 {
 	unsigned int acc_val = n;
