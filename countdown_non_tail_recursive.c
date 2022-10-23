@@ -11,9 +11,9 @@ void countdown(unsigned int n){
 		return 0;
 	}
 	
-	printf("\n%d\n", n); //pending operation
 	//Recursive condition
 	countdown(n-1);
+	printf("\n%d\n", n); //pending operation
 
 		
 } 
