@@ -9,7 +9,7 @@ def reverse_string(word):
   
     
 def main():
-    print(reverse_string("Hello"))
+    print(reverse_string("Hello")) # output == olleH
     
     
 if __name__ == '__main__':
